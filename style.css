@@ -1,0 +1,646 @@
+:root {
+  --primary-green: #73D4AB;
+  --primary-green-light: #C4EDE0;
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --secondary-blue-dark: #00266C;
+  --secondary-blue: #2B99F2;
+  --secondary-red: #FE7575;
+  --secondary-yellow: #FFF964;
+  --secondary-yellow-dark: #E5DF44;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.logo {
+  padding: 2rem;
+}
+
+header {
+  position: relative;
+  height: 620px;
+}
+
+header img {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  width: 45vw;
+  max-width: 586px;
+}
+
+section {
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+.blue-box {
+  background-color: var(--secondary-blue-dark);
+  color: var(--primary-white);
+  width: 80vw;
+  max-width: 80%;
+  height:545px;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4.4rem;
+}
+
+.blue-box .line {
+  margin-left: 1rem;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  width: 9rem;
+  border-top: 2px solid var(--primary-white);
+}
+
+.blue-box h1 {
+  font-size: 54px;
+  line-height: 65px;
+}
+.blue-box p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 26px;
+  margin-top: 1.5rem;
+}
+
+.logo-quote {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 2.2rem;
+  width: 80%;
+  color: var(--secondary-blue-dark);
+}
+.logo-quote img {
+  width: 20%;
+  margin-right: 3rem;
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.feature {
+  margin-top: 2rem;
+  width: 40%;
+}
+
+.feature .line {
+  border-top: 2px solid;
+  width: 22rem;
+}
+.blue-dark { color: var(--secondary-blue-dark); }
+.blue { color: var(--secondary-blue); }
+.red { color: var(--secondary-red); }
+.yellow-dark { color: var(--secondary-yellow-dark); }
+
+.feature h1 {
+  font-size: 2rem;
+  line-height: 150%;
+}
+.feature ul {
+  list-style: none;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 150%;
+}
+.feature p {
+  font-weight: 300;
+}
+
+.contact {
+  position: relative;
+}
+.contact a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 152px;
+  height: 44px;
+  color: var(--primary-white);
+  background-color: var(--secondary-blue-dark);
+  font-size:1.1rem;
+  border: 0;
+}
+.contact .button-background {
+  background-color: var(--secondary-red);
+  width: 152px;
+  height: 44px;
+  transform: translate(10px, 10px);
+  transition: transform 150ms ease;
+}
+.contact:hover .button-background {
+  transform: translate(15px, 15px);
+}
+
+.partners {
+  color: var(--primary-white);
+  background-color: var(--secondary-blue);
+  padding: 2rem;
+  width: 1000px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.partners .background {
+  z-index: -1;
+  position: absolute;
+  width: 60%;
+  bottom: -2rem;
+  right: -2rem;
+  height: 80%;
+  background-color: var(--secondary-blue-dark);
+}
+
+.logo-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.partner {
+  height: 50px;
+  margin: 1rem;
+  display: inline-block;
+  width: max-content;
+  position: relative;
+}
+
+.partner img {
+  height: 100%;
+
+}
+.partner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.partners .partner.bir img {
+  height: 70px;
+}
+
+.floke {
+  text-align: center;
+  max-width: 736px;
+}
+.floke h1 {
+  font-size: 2.4rem;
+  color: var(--secondary-blue-dark);
+}
+.floke p {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.more-features {
+  display: flex;
+}
+.feature-image {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.feature-image img {
+  width: 426px;
+}
+
+.feature-image .background {
+  background-color: var(--primary-green);
+  width: 100%;
+  height: 50%;
+  position:absolute;
+  bottom: -2rem;
+  right: -2rem;
+  z-index: -1;
+}
+.more-features h1 {
+  font-size: 1.4rem;
+  color: var(--secondary-blue-dark);
+}
+
+
+.enklere-hverdag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enklere-hverdag h1 {
+  color: var(--secondary-blue-dark);
+  font-size: 2.4rem;
+}
+.screens {
+  margin: 3rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.screen h1 {
+  font-size: 1.1rem;
+}
+.screen p {
+  font-weight: 300;
+}
+
+.screen .feature-image .background {
+  bottom: -1rem;
+  right: -1rem;
+}
+.screen .feature-image .background.dark-blue {
+  height: 80%;
+  background-color: var(--secondary-blue-dark);
+}
+.screen .feature-image .background.blue {
+  height: 60%;
+  background-color: var(--secondary-blue);
+}
+.screen .feature-image .background.red {
+  height: 95%;
+  background-color: var(--secondary-red);
+}
+
+.planning {
+  margin-top: 8rem;
+  background-color: var(--secondary-blue-dark);
+  color: var(--primary-white);
+  padding: 3rem;
+  display: flex;
+  position: relative;
+  margin-bottom: 26px;
+}
+.planning h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.planning p,
+.planning li {
+  font-size: 0.8rem;
+}
+.planning p {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.planning ol {
+  list-style-position: inside;
+  font-weight: 300;
+  line-height: 180%;
+}
+.planning > a {
+  position: absolute;
+  bottom: -22px;
+  left: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+  width: 228px;
+  background-color: var(--secondary-blue);
+  color: var(--primary-white);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.planning .background {
+  background-color: var(--secondary-blue);
+  height: 90%;
+  width: 50%;
+  position: absolute;
+  right: -33px;
+  bottom: -26px;
+  z-index: -1;
+}
+
+.planning > img {
+  padding: 0 5rem;
+}
+
+footer {
+  max-width: 100%;
+  background-color: var(--primary-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin: 1rem;
+  margin-top: 8rem;
+}
+footer .contact-info {
+  margin: 1.5rem;
+}
+footer .contact-info a {
+  color: var(--primary-black);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1090px) {
+  section {
+    margin-top: 2rem;
+  }
+  header img {
+    width: 340px;
+    right: 0;
+    top: 300px;
+  }
+
+  header .blue-box {
+    margin-left: 0;
+    padding-left: 3rem;
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+  }
+  header .blue-box .line {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+  header .blue-box h1 {
+    margin-top: 1rem;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  header .blue-box p {
+    font-size: 1rem;
+  }
+  .mobile {
+    display: inline-block;
+    width: 80vw;
+  }
+  .desktop {
+    display: none;
+  }
+  .logo-quote {
+    width: 100%;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+  .features {
+    width: 100%;
+  }
+
+  .feature {
+    margin-top: 2rem;
+  }
+  .feature .line {
+    width: 20rem;
+  }
+  .feature h1 {
+    font-size: 1.5rem;
+    line-height: 130%;
+  }
+
+  .enklere-hverdag {
+    margin-top: 5rem;
+  }
+
+  .contact {
+    margin-top: 4rem;
+  }
+
+  .partners {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .partners .background {
+    right: 0;
+    width: 90%;
+  }
+
+  .floke {
+    margin: 5rem auto;
+  }
+
+  .planning {
+    margin-left: 0;
+    margin-right: 3rem;
+    justify-content: space-between;
+  }
+  .planning .background {
+    right: -3rem;
+    bottom: -3rem;
+  }
+  .planning > img {
+    display: flex;
+    padding: 0;
+    width: 120px;
+  }
+  .planning a {
+    bottom: -65px;
+  }
+
+  footer {
+    width:100%;
+    margin: 8rem 0 0 0;
+  }
+  .more-features .features {
+    flex: 1;
+  }
+  .more-features .feature {
+    width: 45%;
+  }
+  .more-features .feature-image img {
+    width: 30vw;
+  }
+  .more-features .feature-image .background {
+    top: -2rem;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  header img {
+    width: 80vw;
+  }
+
+  .fagsystemer {
+    margin-top: 0;
+  }
+  .fagsystemer .mobile {
+    width: 100vw;
+  }
+
+  .logo-quote {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .logo-quote img {
+    width: 30%;
+    margin: 0;
+  }
+  .logo-quote p {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+
+  .features {
+    display: block;
+    width: 100%;
+  }
+  .feature {
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+  }
+  .feature .line {
+    width: calc(100% - 2rem);
+  }
+  .feature h1 {
+    margin-top: 0.5rem;
+  }
+
+  .partners .logo-container {
+    margin-top: 0;
+  }
+  .partners .partner img {
+    height: 40px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .floke {
+    margin: 0;
+    margin-top: 5rem;
+  }
+  .floke h1 {
+    font-size: 2rem;
+  }
+  .floke p {
+    margin: 1rem;
+  }
+
+  .more-features {
+    display: block;
+  }
+  .more-features .feature-image {
+    margin: 2rem 0;
+    margin-bottom: 6rem;
+  }
+  .more-features .feature-image img {
+    width: calc(100% - 3rem);
+  }
+  .more-features .feature-image .background {
+    top: unset;
+    right: unset;
+    left: 4rem;
+    bottom: -1rem;
+    width: calc(100% - 6rem);
+  }
+
+  .more-features .features .feature{
+    width: calc(100% - 2rem);
+  }
+
+  .enklere-hverdag {
+    margin: 0;
+    margin-top: 5rem;
+    display: block;
+  }
+  .enklere-hverdag h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .enklere-hverdag .screens {
+    display: block;
+    margin-top: 0;
+  }
+  .enklere-hverdag .screens .screen {
+    margin-top: 4rem;
+    width: calc(100% - 2rem);
+    display: block;
+  }
+  .enklere-hverdag .screens .screen .feature-image {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .enklere-hverdag .screens .screen h1 {
+    text-align: start;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+  }
+
+  .planning {
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+  .planning > div {
+    order: 2;
+  }
+  .planning .background {
+    right: -1rem;
+    bottom: -1rem;
+  }
+  .planning a {
+    bottom: -5rem;
+  }
+
+  footer {
+    margin-top: 10rem;
+  }
+  footer .sep {
+    display: none;
+  }
+  footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
